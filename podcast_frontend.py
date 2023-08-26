@@ -90,10 +90,7 @@ def main():
             st.subheader("Podcast Host")
             st.write(podcast_info['podcast_host']['name'])
 
-        with col4:
-            st.subheader("Podcast Host Details")
-            st.write(podcast_info["podcast_host"]['summary'])
-
+        with col1:
         # Display the five key moments
             st.subheader("Key Moments")
             key_moments = podcast_info['podcast_highlights']
