@@ -4,7 +4,7 @@ import json
 import os
 
 def main():
-    st.title("Best of NPR")
+    st.title("Newsletter Dashboard")
 
     available_podcast_info = create_dict_from_json_files('.')
 
@@ -38,15 +38,15 @@ def main():
             st.image(podcast_info['podcast_details']['episode_image'], caption="Podcast Cover", width=300, use_column_width=True)
 
         # Display the podcast host and their details in a side-by-side layout
-        col3, col4 = st.columns([3, 7])
+        #col3, col4 = st.columns([3, 7])
 
-        with col3:
+        #with col3:
             st.subheader("Podcast Host:")
             st.write(podcast_info['podcast_host'])
 
             
         # Display the five key moments
-        with col1:
+        #with col1:
             st.subheader("Key Moments")
             key_moments = podcast_info['podcast_highlights']
             for moment in key_moments.split('\n'):
@@ -84,13 +84,13 @@ def main():
             st.image(podcast_info['podcast_details']['episode_image'], caption="Podcast Cover", width=300, use_column_width=True)
 
         # Display the podcast guest and their details in a side-by-side layout
-        col3, col4 = st.columns([3, 7])
+        #col3, col4 = st.columns([3, 7])
 
-        with col3:
+        #with col3:
             st.subheader("Podcast Host")
             st.write(podcast_info['podcast_host'])
 
-        with col1:
+        #with col1:
         # Display the five key moments
             st.subheader("Key Moments")
             key_moments = podcast_info['podcast_highlights']
