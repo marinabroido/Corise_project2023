@@ -87,13 +87,13 @@ def main():
         #col3, col4 = st.columns([3, 7])
 
         #with col3:
-            st.subheader("Podcast Host")
-            st.write(podcast_info['podcast_host'])
+        st.subheader("Podcast Host")
+        st.write(podcast_info['podcast_host'])
 
         #with col1:
         # Display the five key moments
-            st.subheader("Key Moments")
-            key_moments = podcast_info['podcast_highlights']
+        st.subheader("Key Moments")
+        key_moments = podcast_info['podcast_highlights']
         for moment in key_moments.split('\n'):
             st.markdown(
                 f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
