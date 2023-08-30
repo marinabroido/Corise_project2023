@@ -26,7 +26,7 @@ def main():
         #st.subheader("Episode Title")
         st.caption("Episode Title")
         #st.write(podcast_info['podcast_details']['episode_title'])
-        st.writie('<p style="font-size:26px;">podcast_info[podcast_details]['episode_title']</p>'
+        st.writie('<p style="font-size:26px;">podcast_info[podcast_details][episode_title]</p>'
                  unsafe_allow_html=True) 
 
         # Display the podcast summary and the cover image in a side-by-side layout
