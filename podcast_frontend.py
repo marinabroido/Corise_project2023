@@ -23,7 +23,8 @@ def main():
         #st.header("Newsletter Content")
 
         # Display the podcast title
-        st.subheader("Episode Title")
+        #st.subheader("Episode Title")
+        st.caption("Episoe Title")
         st.write(podcast_info['podcast_details']['episode_title'])
 
         # Display the podcast summary and the cover image in a side-by-side layout
