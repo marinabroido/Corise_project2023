@@ -71,7 +71,7 @@ def main():
         #st.header("Newsletter Content")
 
         # Display the podcast title
-        st.write('<br>')
+        st.write('<br>', unsafe_allow_html=True)
         st.subheader("Episode Title")
         st.write(podcast_info['podcast_details']['episode_title'])
 
