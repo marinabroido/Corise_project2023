@@ -25,7 +25,7 @@ def main():
         # Display the podcast title
         #st.subheader("Episode Title")
         st.markdown(""" <style> .font {
-        font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;} 
+        font-size:200px ; font-family: 'Cooper Black'; color: #FF9633;} 
         </style> Episode Title """, unsafe_allow_html=True)
         #st.markdown('<p class="font">Guess the object Names</p>', unsafe_allow_html=True)
         
