@@ -23,6 +23,7 @@ def main():
 
         # Display the podcast title
         st.caption("Episode Title")
+        
         st.header("Newsletter Content")
         st.markdown(""" <style> .font {
         font-size:36px ;} 
