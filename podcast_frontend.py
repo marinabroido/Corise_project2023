@@ -22,8 +22,6 @@ def main():
         # Right section - Newsletter content
 
         # Display the podcast title
-        #st.write('<p style="font-size:16px;">EPISODE TITLE</p>',
-        #unsafe_allow_html=True)
         st.markdown(""" <style> .font {
         font-size:36px ; padding-top:2rem; padding-bottom:0rem;} 
         </style> """, unsafe_allow_html=True)
@@ -37,6 +35,8 @@ def main():
 
         with col1:
             # Display the podcast episode summary
+             #st.write('<p style="font-size:16px;">EPISODE TITLE</p>',
+             #unsafe_allow_html=True)
             st.subheader("Podcast Episode Summary")
             st.write(podcast_info['podcast_summary'])
 
