@@ -31,6 +31,7 @@ def main():
         #st.write('<p style="font-size:24px">' + title + '</p>',
             #unsafe_allow_html=True)
         st.write('<p class="font">' + title + '</p>', unsafe_allow_html=True)
+        
         # Display the podcast summary and the cover image in a side-by-side layout
         col1, col2 = st.columns([7, 3])
 
@@ -41,7 +42,18 @@ def main():
 
         with col2:
             st.image(podcast_info['podcast_details']['episode_image'], caption="Podcast Cover", width=300, use_column_width=True)
+       
+        st.write(
+            """<style>
+            [data-testid="stHorizontalBlock"] {
+                align-items: top;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True
+        )
 
+        
         # Display the podcast host and their details in a side-by-side layout
         #col3, col4 = st.columns([3, 7])
 
