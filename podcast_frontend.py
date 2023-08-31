@@ -34,6 +34,9 @@ def main():
         st.write('<p style="font-size:24px">' + title + '</p>',
             unsafe_allow_html=True)
 
+        st.write('<p class="font">' + title + '</p>',
+            unsafe_allow_html=True)
+
         # Display the podcast summary and the cover image in a side-by-side layout
         col1, col2 = st.columns([7, 3])
 
