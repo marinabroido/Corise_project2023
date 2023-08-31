@@ -25,7 +25,7 @@ def main():
         st.write('<p style="font-size:16px;">EPISODE TITLE</p>',
         unsafe_allow_html=True)
         st.markdown(""" <style> .font {
-        font-size:36px ; padding:0} 
+        font-size:36px ; padding-top:2rem} 
         </style> """, unsafe_allow_html=True)
         
         
