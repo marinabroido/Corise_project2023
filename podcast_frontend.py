@@ -45,7 +45,6 @@ def main():
         #with col3:
         st.subheader("Podcast Host:")
         st.write(podcast_info['podcast_host'])
-        st.divider()
             
         # Display the five key moments
         #with col1:
@@ -71,9 +70,13 @@ def main():
         #st.header("Newsletter Content")
 
         # Display the podcast title
-        st.write('<br>', unsafe_allow_html=True)
+        #st.write('<br>', unsafe_allow_html=True)
+        st.divider()
         st.subheader("Episode Title")
-        st.write(podcast_info['podcast_details']['episode_title'])
+        title = podcast_info['podcast_details']['episode_title']
+        st.write('<p style="font-size:26px; color:red;">' + title + '</p>',
+            unsafe_allow_html=True)
+        #st.write(podcast_info['podcast_details']['episode_title'])
 
         # Display the podcast summary and the cover image in a side-by-side layout
         col1, col2 = st.columns([7, 3])
