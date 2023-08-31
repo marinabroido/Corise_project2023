@@ -25,7 +25,7 @@ def main():
         # Display the podcast title
         #st.subheader("Episode Title")
         st.markdown(""" <style> .font {
-        font-size:36px ; font-weight: bold; color: #1D1D1F;} 
+        font-size:36px ; font-weight: bold;} 
         </style> """, unsafe_allow_html=True)
         
         
