@@ -35,7 +35,7 @@ def main():
 
         with col1:
             # Display the podcast episode summary
-            st.subheader("Podcast Episode Summary")
+            #st.subheader("Podcast Episode Summary")
             st.write(podcast_info['podcast_summary'])
 
         with col2:
