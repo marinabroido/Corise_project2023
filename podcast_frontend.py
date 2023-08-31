@@ -35,8 +35,8 @@ def main():
 
         with col1:
             # Display the podcast episode summary
-             #st.write('<p style="font-size:16px;">EPISODE TITLE</p>',
-             #unsafe_allow_html=True)
+            st.write('<p style="font-size:28px; padding-top: 8px;">Podcast Episode Summary</p>',
+                 unsafe_allow_html=True)
             st.subheader("Podcast Episode Summary")
             st.write(podcast_info['podcast_summary'])
 
