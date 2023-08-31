@@ -23,7 +23,7 @@ def main():
         #st.header("Newsletter Content")
 
         # Display the podcast title
-        #st.subheader("Episode Title")
+        st.subheader("Episode Title")
         st.markdown(""" <style> .font {
         font-size:36px ;} 
         </style> """, unsafe_allow_html=True)
