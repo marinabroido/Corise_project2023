@@ -25,7 +25,8 @@ def main():
         # Display the podcast title
         st.subheader("Episode Title")
         title = podcast_info['podcast_details']['episode_title']
-        st.markdown(f"<h3>{title}</h3>")
+        st.write('<p style="font-size:26px; color:red;">Here is some red text</p>',
+            unsafe_allow_html=True)
 
         # Display the podcast summary and the cover image in a side-by-side layout
         col1, col2 = st.columns([7, 3])
