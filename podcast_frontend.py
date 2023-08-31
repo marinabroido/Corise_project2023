@@ -27,8 +27,7 @@ def main():
         st.markdown(""" <style> .font {
         font-size:36px ; font-weight: bold; color: #A945E3;} 
         </style> """, unsafe_allow_html=True)
-        #st.markdown('<p class="font">Guess the object Names</p>', unsafe_allow_html=True)
-
+        
         
         title = podcast_info['podcast_details']['episode_title']
         #st.write('<p style="font-size:24px">' + title + '</p>',
