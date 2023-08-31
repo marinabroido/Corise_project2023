@@ -42,18 +42,7 @@ def main():
 
         with col2:
             st.image(podcast_info['podcast_details']['episode_image'], caption="Podcast Cover", width=300, use_column_width=True)
-       
-        st.write(
-            """<style>
-            [data-testid="stHorizontalBlock"] {
-                align-items: bottom;
-            }
-            </style>
-            """,
-            unsafe_allow_html=True
-        )
 
-        
         # Display the podcast host and their details in a side-by-side layout
         #col3, col4 = st.columns([3, 7])
 
