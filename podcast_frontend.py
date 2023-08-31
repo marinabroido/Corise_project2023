@@ -23,7 +23,7 @@ def main():
         #st.header("Newsletter Content")
 
         # Display the podcast title
-        #st.subheader("Episode Title")
+        st.subheader("Episode Title")
         st.write(""" <style> .font {
         font-size:200px ; font-family: 'Cooper Black'; color: #FF9633;} 
         </style> Episode Title """, unsafe_allow_html=True)
