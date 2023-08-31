@@ -23,9 +23,11 @@ def main():
         #st.header("Newsletter Content")
 
         # Display the podcast title
-        st.subheader("Episode Title")
-        st.write('<style> .font {font-size:200px}</style> Episode Title', unsafe_allow_html=True)
-        #st.markdown('<p class="font">Guess the object Names</p>', unsafe_allow_html=True)
+        #st.subheader("Episode Title")
+        st.markdown(""" <style> .font {
+        font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;} 
+        </style> """, unsafe_allow_html=True)
+        st.markdown('<p class="font">Guess the object Names</p>', unsafe_allow_html=True)
         
         title = podcast_info['podcast_details']['episode_title']
         st.write('<p style="font-size:24px">' + title + '</p>',
