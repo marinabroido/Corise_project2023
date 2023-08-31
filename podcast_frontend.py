@@ -46,7 +46,7 @@ def main():
         st.write(
             """<style>
             [data-testid="stHorizontalBlock"] {
-                align-items: top;
+                align-items: bottom;
             }
             </style>
             """,
