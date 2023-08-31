@@ -27,13 +27,10 @@ def main():
         st.markdown(""" <style> .font {
         font-size:36px ; padding-top:0rem} 
         </style> """, unsafe_allow_html=True)
-        
-        
         title = podcast_info['podcast_details']['episode_title']
         #st.write('<p style="font-size:24px">' + title + '</p>',
             #unsafe_allow_html=True)
         st.write('<p class="font">' + title + '</p>', unsafe_allow_html=True)
-
         # Display the podcast summary and the cover image in a side-by-side layout
         col1, col2 = st.columns([7, 3])
 
