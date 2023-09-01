@@ -86,13 +86,15 @@ def main():
         st.write('<p style="font-size:32px;">' + title + '</p>',
             unsafe_allow_html=True)
         #st.write(podcast_info['podcast_details']['episode_title'])
+        
+        st.subheader("Podcast Episode Summary")
 
         # Display the podcast summary and the cover image in a side-by-side layout
         col1, col2 = st.columns([7, 3])
 
         with col1:
             # Display the podcast episode summary
-            st.subheader("Podcast Episode Summary")
+            #st.subheader("Podcast Episode Summary")
             st.write(podcast_info['podcast_summary'])
 
         with col2:
@@ -101,17 +103,17 @@ def main():
         # Display the podcast guest and their details in a side-by-side layout
         #col3, col4 = st.columns([3, 7])
 
-        #with col3:
+        with col1:
         st.subheader("Podcast Host")
         st.write(podcast_info['podcast_host'])
 
-        #with col1:
         # Display the five key moments
-        st.subheader("Key Moments")
-        key_moments = podcast_info['podcast_highlights']
-        for moment in key_moments.split('\n'):
-            st.markdown(
-                f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
+        with col1:
+            st.subheader("Key Moments")
+            key_moments = podcast_info['podcast_highlights']
+            for moment in key_moments.split('\n'):
+                st.markdown(
+                    f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
 
 
       
