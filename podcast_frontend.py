@@ -43,7 +43,7 @@ def main():
         # Display the podcast host and their details in a side-by-side layout
         #col3, col4 = st.columns([3, 7])
 
-        #with col3:
+        with col1:
         st.subheader("Podcast Host")
         st.write(podcast_info['podcast_host'])
             
