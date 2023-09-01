@@ -56,7 +56,7 @@ def main():
                 f"<p style='margin-bottom: 5px;'>{moment}</p>", unsafe_allow_html=True)
 
     # User Input box
-    st.sidebar.subheader("Add and Process New Podcast Feed")
+    st.sidebar.header("Add and Process New Podcast Feed")
     url = st.sidebar.text_input("Link to RSS Feed")
 
     process_button = st.sidebar.button("Process Podcast Feed")
