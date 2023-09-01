@@ -25,7 +25,7 @@ def main():
 
         st.subheader("Episode Title")
         title = podcast_info['podcast_details']['episode_title']
-        st.write('<p style="font-size:26px; color:red;">' + title + '</p>',
+        st.write('<p style="font-size:32px; color:#A945E3;">' + title + '</p>',
             unsafe_allow_html=True)
         #st.write(podcast_info['podcast_details']['episode_title'])
 
