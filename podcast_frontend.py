@@ -22,6 +22,7 @@ def main():
         # Right section - Newsletter content
 
         # Display the podcast title
+        st.write("Episode Title")
         st.markdown(""" <style> .font {
         font-size:36px ; padding-top:2rem; padding-bottom:0.5rem;} 
         </style> """, unsafe_allow_html=True)
