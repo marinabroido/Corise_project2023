@@ -82,15 +82,22 @@ def main():
         # Display the podcast title
         #st.write('<br>', unsafe_allow_html=True)
         st.divider()
-    
-        #st.subheader("Episode Title")
+        st.subheader("Podcast Episode Title")
         title = podcast_info['podcast_details']['episode_title']
         st.write('<p style="font-size:32px;padding-top:1rem; padding-bottom:0.5rem;">' + title + '</p>',
             unsafe_allow_html=True)
 
         st.subheader("Podcast Episode Summary")
+        
         # Display the podcast summary and the cover image in a side-by-side layout
         col1, col2 = st.columns([7, 3])
+        with col1:
+            # Display the podcast episode summary
+            st.write(podcast_info['podcast_summary'])
+
+        with col2:
+            st.image(podcast_info['podcast_details']['episode_image'], caption="Podcast Cover", width=300, use_column_width=True)
+
         with col1:
             st.subheader("Podcast Host")
             st.write(podcast_info['podcast_host'])
