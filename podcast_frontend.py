@@ -76,14 +76,14 @@ def main():
         podcast_info = process_podcast_info(url)
 
         # Right section - Newsletter content
-        #st.header("Newsletter Content")
+       
 
         # Display the podcast title
         #st.write('<br>', unsafe_allow_html=True)
         st.divider()
-        st.subheader("Episode Title")
+        st.subheader("Podcast Episode Title")
         title = podcast_info['podcast_details']['episode_title']
-        st.write('<p style="font-size:26px; color:red;">' + title + '</p>',
+        st.write('<p style="font-size:32px;">' + title + '</p>',
             unsafe_allow_html=True)
         #st.write(podcast_info['podcast_details']['episode_title'])
 
