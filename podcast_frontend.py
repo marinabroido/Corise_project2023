@@ -33,9 +33,9 @@ def main():
         # Display the podcast summary and the cover image in a side-by-side layout
         col1, col2 = st.columns([7, 3])
 
+        st.subheader("Podcast Episode Summary")
         with col1:
             # Display the podcast episode summary
-            st.subheader("Podcast Episode Summary")
             st.write(podcast_info['podcast_summary'])
 
         with col2:
