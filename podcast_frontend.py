@@ -23,7 +23,7 @@ def main():
 
         # Display the podcast title
         st.markdown(""" <style> .font {
-        font-size:32px ; padding-top:1.5rem; padding-bottom:0.5rem;} 
+        font-size:32px ; padding-top:1rem; padding-bottom:0.5rem;} 
         </style> """, unsafe_allow_html=True)
         title = podcast_info['podcast_details']['episode_title']
         #st.write('<p style="font-size:24px">' + title + '</p>',
